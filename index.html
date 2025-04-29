@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BNS AI Genie Ad Creator - Certified Production</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/bns_logo.png" type="image/png">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #e6f0ff, #ffffff);
+            overflow-x: hidden;
+        }
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            position: sticky;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        #heroMenu {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        #heroMenu a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        #heroMenu a:hover {
+            color: #007bff;
+        }
+        #logo {
+            height: 50px;
+        }
+        section {
+            padding: 40px 20px;
+            animation: fadeIn 1s ease both;
+        }
+        form input, form button {
+            padding: 10px;
+            margin: 10px 0;
+            width: 90%;
+            max-width: 400px;
+        }
+        #loading, #popup, #videoSection {
+            text-align: center;
+            margin-top: 30px;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.05);
+            text-align: center;
+            padding: 15px 10px;
+            font-size: 14px;
+            margin-top: 50px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+    <script defer src="assets/main.js"></script>
+</head>
+<body>
+    <header>
+        <img src="assets/bns_logo.png" alt="BNS Logo" id="logo">
+        <nav id="heroMenu">
+            <a href="#home">Home</a>
+            <a href="#demo">Demo</a>
+            <a href="https://qa.bestnetworksystems.com/#/signup" target="_blank">Sign Up</a>
+            <a href="https://analytics.bestnetworksystems.com/#/dashboard" target="_blank">Analytics</a>
+            <a href="https://airemenu.com/new/restaurant/register" target="_blank">Ecommerce</a>
+            <a href="#offers">Offers</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>CTV That Converts — Unlock Companion Offers with Every Ad</h1>
+        <iframe src="https://adspro.bestnetworksystems.com/videoplayer" width="100%" height="480" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="demo">
+        <h2>Demo Ad Generator</h2>
+        <form id="adForm">
+            <input type="text" id="businessType" placeholder="Business Type" required><br>
+            <input type="text" id="tone" placeholder="Tone" required><br>
+            <input type="text" id="phrases" placeholder="Key Phrases" required><br>
+            <button type="submit">Generate Ad</button>
+        </form>
+    </section>
+
+    <section id="offers"><h2>Offers Coming Soon</h2></section>
+
+    <div id="loading" style="display:none;">
+        <img src="assets/magicwand.gif" alt="Loading...">
+        <h2>Creating Your Magical Ad...</h2>
+    </div>
+
+    <div id="popup" style="display:none;">
+        <h2>✅ Your Ad Genie Creation is Complete!</h2>
+        <button onclick="hidePopup()">Watch Your Ad</button>
+    </div>
+
+    <div id="videoSection" style="display:none;">
+        <video id="yourVideoPlayer" controls autoplay muted width="720"></video>
+    </div>
+
+    <footer>Powered by Best Network Systems Inc.</footer>
+</body>
+</html>
